@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<script>
+    function myFunction() {
+        var age = (document.getElementById("age").value);
+        if (age != 0) {
+            if (age > 60)
+            {
+                alert("Sorry you are overage");
+            }
+        }
+        else {
+            alert("Please enter your age");
+        }
+    }
+</script>
+<div id="main">
+    <div class="h-tag">
+        <h2>Tell us your concern..</h2>
+    </div>
+    <!-- create account div -->
+    <div class="login">
+        <table cellspacing="2" align="center" cellpadding="8" border="0">
+            <tr>
+                <td align="right">Enter Name :</td>
+                <td><input type="text" placeholder="Enter your name" class="tb" /></td>
+            </tr>
+            <tr>
+                <td align="right">Enter Age :</td>
+                <td><input type="text" id="age" placeholder="Enter your age here" class="tb" /></td>
+            </tr>
+            <tr>
+                <td align="right">Enter Email ID :</td>
+                <td><input type="text" placeholder="Enter email-id here" class="tb" /></td>
+            </tr>
+            <tr>
+                <td align="right">Concern :</td>
+                <td>
+                    <textarea rows="5" cols="50" name="Description"
+                              id="Description"></textarea>
+                </td>
+            </tr>
+   
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset" value="Clear Form" id="res" class="btn" />
+                    <input type="submit" onclick="myFunction()" value="Submit" class="btn" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
